@@ -1,0 +1,46 @@
+algoritmo "Calculadora" 
+var 
+operacao:inteiro 
+numero1,numero2,resultado:real
+inicio
+   escreval("- calculadora basica --")
+   escreva("Digite o seu primeiro número: ")
+   leia(numero1)
+   escreva("Digite o segundo número: ")
+   leia(numero2)
+
+   escreval("Escolha a operação:")
+   escreval("1 - Soma")
+   escreval("2 - Subtração")
+   escreval("3 - Multiplicação")
+   escreval("4 - Divisão")
+   escreva("Sua operacao: ")
+   leia(operacao)
+
+   escreval()
+   escreval("-------------------")
+   escolha operacao
+      caso 1
+         resultado <- numero1 + numero2
+         escreval("Resultado da Soma: ", resultado)
+      caso 2
+         resultado <- numero1 - numero2
+         escreval("Resultado da Subtração: ", resultado)
+      caso 3
+         resultado <- numero1 * numero2
+         escreval("Resultado da Multiplicação: ", resultado)
+      caso 4
+    
+         se numero2 <> 0 entao
+            resultado <- numero1 / numero2
+            escreval("Resultado da Divisão: ", resultado)
+         senao
+            escreval("Erro: Não é possível realizsar esta divisão!")
+         fimse
+      outrocaso
+         escreval("Opção inválida! Por favor tente novamente.")
+   fimescolha
+
+   escreval("---------------")
+
+fimalgoritmo
